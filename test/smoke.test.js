@@ -23,9 +23,9 @@ test('GET /api/status returns time and visits without incrementing visits', asyn
   assert.strictEqual(secondBody.visits, firstBody.visits);
 });
 
-test('GET / returns 200 HTML containing "Deploy Test App v1"', async () => {
+test('GET / returns 200 HTML containing "Deploy Test App v2"', async () => {
   const res = await fetch(`${BASE_URL}/`);
   assert.strictEqual(res.status, 200);
   const html = await res.text();
-  assert.ok(html.includes('Deploy Test App v1'), 'response body missing "Deploy Test App v1"');
+  assert.ok(html.includes('Deploy Test App v2'), 'response body missing "Deploy Test App v2"');
 });
