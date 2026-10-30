@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deploy Test App v1</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <h1>Deploy Test App v1</h1>
+      <p class="subtitle">Running on a BrightWorks server</p>
+
+      <section class="card" aria-labelledby="status-heading">
+        <h2 id="status-heading" class="visually-hidden">Server status</h2>
+        <dl class="status">
+          <div class="row">
+            <dt>Server time</dt>
+            <dd id="server-time">&mdash;</dd>
+          </div>
+          <div class="row">
+            <dt>Visits</dt>
+            <dd id="visits">&mdash;</dd>
+          </div>
+        </dl>
+        <p id="status-note" class="note" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
